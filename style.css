@@ -19,19 +19,30 @@ body {
   justify-content: center;
 }
 
+
 .counter {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.771);
   padding: 20px;
   border: 5px solid rgb(255, 136, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: fit-content;
+  position: absolute;
+  border-radius:20px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.5);
+  
 }
-
+.counter img{
+  position: relative;
+  width: 80px;
+  top: -60px;
+  rotate: 100deg;
+}
 h1 {
   color: rgb(255, 255, 255);
+  margin-top:-50px;
+  font-size: 45px;
 }
 
 .teams {
@@ -48,6 +59,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   border: 2px solid black;
+  border-radius:20px;
 }
 
 .team {
@@ -56,17 +68,23 @@ button {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  width: 40vw;
-  border: 3px solid rgb(255, 115, 0);
-  padding: 35px;
+  /* width:260px; */
+  width:100%;
+  padding: 30px;
+  border-radius: 13px;
 }
 
 .redTeam {
   background-color: #ffcccc;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 0px 4px 20px 0px rgba(255, 0, 0, 0.50);
+  
 }
 
 .blueTeam {
+  border: 2px solid rgb(0, 102, 255);
   background-color: #ccf1ff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 208, 255, 0.5);
 }
 
 .team h2 {

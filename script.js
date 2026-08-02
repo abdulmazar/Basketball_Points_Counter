@@ -16,7 +16,7 @@ function inputTeamNames() {
   team2.textContent = prompt("Enter Team Blue Name");
 }
 
-inputTeamNames();
+// inputTeamNames();
 
 function addRedPoint() {
   redPoint++;
