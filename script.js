@@ -1,22 +1,22 @@
-let redGoal = 0;
-let blueGoal = 0;
-let redPreGoal = document.getElementById("redTeamGoals");
-let bluePreGoal = document.getElementById("blueTeamGoals");
-let redGoalDisplay = document.getElementById("red-goals");
-let blueGoalDisplay = document.getElementById("blue-goals");
-function addRedGoal() {
-  redGoal++;
-  redGoalDisplay.textContent = redGoal;
+let redPoint = 0;
+let bluePoint = 0;
+let redPrePoint = document.getElementById("redTeamPoints");
+let bluePrePoint = document.getElementById("blueTeamPoints");
+let redPointDisplay = document.getElementById("red-points");
+let bluePointDisplay = document.getElementById("blue-points");
+
+function addRedPoint() {
+  redPoint++;
+  redPointDisplay.textContent = redPoint;
 }
-function addBlueGoal() {
-  blueGoal++;
-  blueGoalDisplay.textContent = blueGoal;
+function addBluePoint() {
+  bluePoint++;
+  bluePointDisplay.textContent = bluePoint;
 }
 
-function saveGoal(){
-  redPreGoal.textContent += " - " + redGoal ;
-  bluePreGoal.textContent += " - " + blueGoal ;
-  redGoal = blueGoal = 0;
-  redGoalDisplay.textContent = blueGoalDisplay.textContent = 0;
-
+function savePoint() {
+  redPrePoint.textContent += " - " + redPoint;
+  bluePrePoint.textContent += " - " + bluePoint;
+  redPoint = bluePoint = 0;
+  redPointDisplay.textContent = bluePointDisplay.textContent = 0;
 }

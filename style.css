@@ -27,12 +27,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:fit-content;
+  width: fit-content;
 }
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
-  
 }
 
 .teams {
@@ -42,7 +41,6 @@ h1{
   gap: 20px;
   margin: 30px 0px;
   width: 100%;
-  
 }
 
 button {
@@ -76,34 +74,35 @@ button {
   font-weight: 600;
 }
 
-.team-goals{
+.team-points {
   font-size: 20px;
   font-style: italic;
   margin-top: 14px;
   font-weight: 600;
 }
-.add-goal {
+.add-point {
   color: white;
-  margin:14px 0px;
+  margin: 14px 0px;
 }
-.add-goal.red {
+.add-point.red {
   background-color: #ff0000;
 }
-.add-goal.blue {
+.add-point.blue {
   background-color: #0000ff;
 }
 
-.previous-goals{
+.previous-points {
   font-size: 15px;
   font-style: italic;
 }
-#save-goal{
+
+#save-points {
   background-color: rgb(1, 130, 5);
   color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 255, 0);
 }
 
-#end-game{
+#end-game {
   background-color: rgb(178, 2, 2);
   color: rgb(255, 255, 255);
   padding: 10px 35px;
