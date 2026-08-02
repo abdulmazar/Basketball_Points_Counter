@@ -13,21 +13,21 @@
       <div class="teams">
         <div class="redTeam team">
           <h2>Team Red</h2>
-          <p class="team-goals">Goals: <span id="RedGoals">0</span></p>
-          <button class="add-goal" id="addRedGoal">ADD GOAL</button>
-          <p class="previous-goals" id="redTeamGoals">Previous Goals:10</p>
+          <p class="team-goals">Goals: <span id="red-goals">0</span></p>
+          <button class="add-goal red" onclick="addRedGoal()">ADD GOAL</button>
+          <p class="previous-goals" >Previous Goals: <span id="redTeamGoals"></span></p>
         </div>
 
         <div class="blueTeam team">
           <h2>Team Blue</h2>
-          <p class="team-goals">Goals: <span id="BlueGoals">0</span></p>
-          <button class="add-goal" id="addBlueGoal">ADD GOAL</button>
-          <p class="previous-goals" id="blueTeamGoals">Previous Goals:10</p>
+          <p class="team-goals">Goals: <span id="blue-goals">0</span></p>
+          <button class="add-goal blue" onclick="addBlueGoal()">ADD GOAL</button>
+          <p class="previous-goals" >Previous Goals: <span id="blueTeamGoals"></span></p>
         </div>
       </div>
 
-      <button id="saveGoal">SAVE GOAL</button>
-      <button id="endGame">END GAME</button>
+      <button id="save-goal" onclick="saveGoal()">SAVE GOAL</button>
+      <button id="end-game" onclick="endGame()">END GAME</button>
     </div>
 
     <script src="script.js"></script>

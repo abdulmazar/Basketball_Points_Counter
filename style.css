@@ -86,10 +86,10 @@ button {
   color: white;
   margin:14px 0px;
 }
-#addRedGoal {
+.add-goal.red {
   background-color: #ff0000;
 }
-#addBlueGoal {
+.add-goal.blue {
   background-color: #0000ff;
 }
 
@@ -97,13 +97,13 @@ button {
   font-size: 15px;
   font-style: italic;
 }
-#saveGoal{
+#save-goal{
   background-color: rgb(1, 130, 5);
   color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 255, 0);
 }
 
-#endGame{
+#end-game{
   background-color: rgb(178, 2, 2);
   color: rgb(255, 255, 255);
   padding: 10px 35px;
