@@ -11,10 +11,12 @@ let bluePointDisplay = document.getElementById("blue-points");
 let team1 = document.getElementById("team1");
 let team2 = document.getElementById("team2");
 
-// let userAgreed = confirm("Do you agree?");
+function inputTeamNames() {
+  team1.textContent = prompt("Enter Team Red Name");
+  team2.textContent = prompt("Enter Team Blue Name");
+}
 
-team1.textContent = prompt("Enter Team Red Name");
-team2.textContent = prompt("Enter Team Blue Name");
+inputTeamNames();
 
 function addRedPoint() {
   redPoint++;
@@ -44,7 +46,13 @@ function endGame(){
   } else {
     alert("It's a tie!");
   }
-  redPoint = bluePoint = 0;
+  redPoint = bluePoint = 0 = totalRed = totalBlue = 0;
   redPointDisplay.textContent = bluePointDisplay.textContent = totalRedPoints.textContent = totalBluePoints.textContent = 0;
   redPrePoint.textContent = bluePrePoint.textContent = "";
+
+  let userAgreed = confirm("Do you want to change the team names?");
+  if(userAgreed){
+    inputTeamNames();
+  } 
+
 }
