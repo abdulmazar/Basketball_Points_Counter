@@ -46,7 +46,7 @@ function endGame(){
   } else {
     alert("It's a tie!");
   }
-  redPoint = bluePoint = 0 = totalRed = totalBlue = 0;
+  redPoint = bluePoint= totalRed = totalBlue = 0;
   redPointDisplay.textContent = bluePointDisplay.textContent = totalRedPoints.textContent = totalBluePoints.textContent = 0;
   redPrePoint.textContent = bluePrePoint.textContent = "";
 
