@@ -27,6 +27,12 @@ let blue = {
 function inputTeamNames() {
   red.name.textContent = prompt("Enter Team Red Name");
   blue.name.textContent = prompt("Enter Team Blue Name");
+  if(red.name.textContent === null || red.name.textContent ===""){
+    red.name.textContent ="Red"
+  }
+  if(blue.name.textContent === null || blue.name.textContent ===""){
+    blue.name.textContent ="Blue"
+  }
 }
 
 inputTeamNames();
