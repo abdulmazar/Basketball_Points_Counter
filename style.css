@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  transition: ease-out 0.3s;
   /* border: 1px solid black; */
 }
 
@@ -19,7 +20,6 @@ body {
   justify-content: center;
 }
 
-
 .counter {
   background-color: rgba(0, 0, 0, 0.771);
   padding: 20px;
@@ -29,11 +29,10 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  border-radius:20px;
+  border-radius: 20px;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.5);
-  
 }
-.counter img{
+.counter img {
   position: relative;
   width: 80px;
   top: -60px;
@@ -41,7 +40,7 @@ body {
 }
 h1 {
   color: rgb(255, 255, 255);
-  margin-top:-50px;
+  margin-top: -50px;
   font-size: 45px;
 }
 
@@ -59,12 +58,12 @@ button {
   font-weight: 600;
   cursor: pointer;
   border: 2px solid black;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .team {
   text-align: center;
-  width:300px;
+  width: 300px;
   padding: 30px;
   border-radius: 13px;
 }
@@ -72,13 +71,13 @@ button {
 .redTeam {
   background-color: #ffcccc;
   border: 2px solid rgb(255, 0, 0);
-  box-shadow: 0px 4px 20px 0px rgba(255, 0, 0, 0.50);
+  box-shadow: 0px 4px 20px 5px rgba(255, 0, 0, 0.5);
 }
 
 .blueTeam {
   border: 2px solid rgb(0, 102, 255);
   background-color: #ccf1ff;
-  box-shadow: 0px 4px 20px 0px rgba(0, 208, 255, 0.5);
+  box-shadow: 0px 4px 20px 5px rgba(0, 208, 255, 0.5);
 }
 
 .team h2 {
@@ -94,6 +93,7 @@ button {
 .add-point {
   color: white;
   margin: 22px 0px;
+  opacity: 0.7;
 }
 .add-point.red {
   background-color: #ff0000;
@@ -101,7 +101,15 @@ button {
 .add-point.blue {
   background-color: #0000ff;
 }
-
+.add-point:hover {
+  opacity: 1;
+}
+.add-point:active {
+  transform: scale(0.8);
+}
+.team:hover {
+  transform: scale(1.05);
+}
 .previous-match {
   font-size: 14px;
   font-style: italic;
@@ -109,19 +117,40 @@ button {
 }
 
 #save-points {
-  background-color: rgb(1, 130, 5);
+  background-color: rgba(1, 130, 5, 0.726);
   color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 255, 0);
   font-size: 16px;
 }
 
+#save-points:hover {
+  background-color: rgb(1, 130, 5);
+  box-shadow: 0px 0px 20px 2px rgba(26, 255, 0, 0.5);
+}
+
+#save-points:active {
+  background-color: rgb(0, 255, 0);
+  color: rgba(0, 0, 0, 0.771);
+  border-color: rgba(1, 130, 5, 0.726);
+}
+
 #end-game {
-  background-color: rgb(178, 2, 2);
+  background-color: rgb(178, 2, 2, 0.726);
   font-size: 18px;
   color: rgb(255, 255, 255);
   padding: 10px 35px;
   margin-top: 30px;
   border: 2px solid rgb(255, 0, 0);
+}
+#end-game:hover {
+  background-color: rgba(178, 2, 2, 0.9);
+  box-shadow: 0px 4px 20px 5px rgb(178, 2, 2);
+  transform: scale(1.2);
+}
+
+#end-game:active {
+  background-color: rgb(255, 0, 0);
+  border-color: rgb(255, 255, 255);
 }
 
 .total-points {
